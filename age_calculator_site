@@ -91,11 +91,11 @@
        var agedifferent = regis - bd;
        var ageDate = new Date(agedifferent);
 
-       var umwakas = ageDate.getUTCFullYear() - 1970;
-       var ukwezis = ageDate.getUTCMonth();
-       var nos = ageDate.getUTCDate() - 1; 
+       var years = ageDate.getUTCFullYear() - 1970;
+       var months = ageDate.getUTCMonth();
+       var days = ageDate.getUTCDate() - 1; 
 
-        document.getElementById('output').innerText = You are ${umwakas} umwakas, ${ukwezis} ukwezis, and ${nos} nos old.;
+        document.getElementById('output').innerText = `You are ${years} years, ${months} months, and ${days} days old.`;
     }
 </script>
 
